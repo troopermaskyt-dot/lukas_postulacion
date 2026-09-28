@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Postulaciones Staff · Lukas GamerQ13</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#171a33;--panel:#212547;--line:#363b6b;--text:#f1f2fb;--muted:#a9adcf;--gold:#ffc93c;--coral:#ff6b7f;--ok:#4ade9a;--r:14px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--text);font:400 16px/1.6 'DM Sans',system-ui,sans-serif;min-height:100vh}
+h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;line-height:1.1}
+a{color:var(--gold)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 5vw;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+.brand{font:800 1.2rem 'Bricolage Grotesque',sans-serif;color:var(--text);text-decoration:none}
+.brand span{color:var(--gold)}
+nav{display:flex;gap:10px;align-items:center}
+.btn{font:700 .95rem 'DM Sans',sans-serif;border:2px solid var(--gold);background:var(--gold);color:#1a1500;padding:10px 18px;border-radius:999px;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.ghost{background:transparent;color:var(--gold)}
+.btn.danger{border-color:var(--coral);background:transparent;color:var(--coral)}
+.btn.sm{padding:6px 12px;font-size:.85rem}
+.btn:disabled{opacity:.5;cursor:wait}
+main{max-width:860px;margin:0 auto;padding:0 5vw 80px}
+.hero{padding:64px 0 32px}
+.hero h1{font-size:clamp(2.4rem,7vw,4.4rem);font-weight:800;letter-spacing:-.02em}
+.hero p{color:var(--muted);max-width:52ch;margin:18px 0 26px;font-size:1.1rem}
+.rules{background:var(--panel);border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:var(--r);padding:22px 24px;margin:16px 0 48px}
+.rules h2{font-size:1.4rem;margin-bottom:10px}
+.rules li{margin:8px 0 8px 20px}
+.rules b{color:var(--gold)}
+form h2{font-size:1.8rem;margin-bottom:6px}
+.sub{color:var(--muted);margin-bottom:24px}
+fieldset{border:0;margin-bottom:28px;padding:0}
+legend{font:800 1.15rem 'Bricolage Grotesque',sans-serif;margin-bottom:12px;color:var(--gold)}
+label{display:block;font-weight:500;margin:14px 0 6px}
+input,select,textarea{width:100%;background:var(--bg);color:var(--text);border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;font:inherit}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);outline:none}
+.hint{font-size:.85rem;color:var(--muted);margin-top:4px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:600px){.row{grid-template-columns:1fr}}
+.check{display:flex;gap:10px;align-items:flex-start;font-weight:400}
+.check input{width:auto;margin-top:6px}
+.notice{padding:12px 16px;border-radius:10px;margin:14px 0;font-size:.95rem}
+.notice.info{background:#2b3160;border:1px solid var(--gold)}
+.notice.err{background:#4a1f2e;border:1px solid var(--coral);color:#ffd5db}
+.notice.ok{background:#173d31;border:1px solid var(--ok);color:#c8f7e0}
+.hidden{display:none!important}
+dialog{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:var(--r);padding:26px;width:min(420px,92vw);margin:auto}
+dialog::backdrop{background:rgba(5,6,20,.7)}
+dialog h2{margin-bottom:12px}
+.tabs{display:flex;gap:8px;margin-bottom:8px}
+.tab{flex:1;padding:9px;border-radius:10px;border:1.5px solid var(--line);background:transparent;color:var(--muted);font:700 .9rem 'DM Sans';cursor:pointer}
+.tab.on{border-color:var(--gold);color:var(--gold)}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.chip{border:1.5px solid var(--line);background:transparent;color:var(--muted);padding:6px 14px;border-radius:999px;cursor:pointer;font:500 .9rem 'DM Sans'}
+.chip.on{background:var(--gold);border-color:var(--gold);color:#1a1500}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);margin-bottom:12px;overflow:hidden}
+.card summary{list-style:none;cursor:pointer;padding:16px 18px;display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.card summary::-webkit-details-marker{display:none}
+.card .who{font-weight:700}
+.card .meta{font-size:.85rem;color:var(--muted)}
+.tag{font-size:.8rem;font-weight:700;padding:3px 10px;border-radius:999px;border:1.5px solid}
+.tag.pendiente{color:var(--gold);border-color:var(--gold)}
+.tag.aceptada{color:var(--ok);border-color:var(--ok)}
+.tag.rechazada{color:var(--coral);border-color:var(--coral)}
+.body{padding:0 18px 18px;border-top:1px solid var(--line)}
+.body dt{color:var(--gold);font-weight:700;margin-top:14px;font-size:.9rem}
+.body dd{margin:2px 0 0;white-space:pre-wrap;word-break:break-word}
+.acts{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
+.empty{text-align:center;color:var(--muted);padding:40px 0}
+footer{text-align:center;color:var(--muted);padding:24px;font-size:.85rem;border-top:1px solid var(--line)}
+@media(prefers-reduced-motion:no-preference){.hero h1{animation:in .6s ease both}@keyframes in{from{opacity:0;transform:translateY(14px)}}}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="#" id="home">Lukas <span>GamerQ13</span></a>
+  <nav>
+    <a class="btn ghost sm" href="https://www.youtube.com/@Lukas_GamerQ13" target="_blank" rel="noopener">YouTube</a>
+    <button class="btn sm" id="btnLogin">Iniciar sesión</button>
+    <button class="btn ghost sm hidden" id="btnPanel">Ver postulaciones</button>
+    <button class="btn danger sm hidden" id="btnLogout">Cerrar sesión</button>
+  </nav>
+</header>
+
+<main>
+  <div id="cfgWarn" class="notice err hidden">Falta configurar Firebase. Pega tus datos en <code>firebaseConfig</code> dentro del código del archivo.</div>
+
+  <!-- VISTA PÚBLICA -->
+  <section id="viewPublic">
+    <div class="hero">
+      <h1>Sé parte del staff del servidor.</h1>
+      <p>Buscamos personas que quieran cuidar la comunidad de Lukas GamerQ13 en Discord. Lee los requisitos y llena la postulación.</p>
+      <a class="btn" href="#form">Postular ahora</a>
+    </div>
+
+    <div class="rules">
+      <h2>Requisitos mínimos</h2>
+      <ul>
+        <li>Ser <b>mayor de 13 años</b>.</li>
+        <li>Tener <b>experiencia en otros servers</b> de Discord. Si no tienes, entrarás como <b>Helper</b>.</li>
+        <li>Ayudar a los demás miembros y <b>guiarlos</b>.</li>
+      </ul>
+    </div>
+
+    <form id="form" novalidate>
+      <h2>Postulación de staff</h2>
+      <p class="sub">Responde con sinceridad. Solo el dueño del servidor puede ver tus respuestas.</p>
+
+      <fieldset>
+        <legend>Sobre ti</legend>
+        <div class="row">
+          <div><label for="nombre">Nombre o apodo</label><input id="nombre" required maxlength="60"></div>
+          <div><label for="discord">Usuario de Discord</label><input id="discord" required maxlength="40" placeholder="usuario"></div>
+        </div>
+        <div class="row">
+          <div><label for="edad">Edad</label><input id="edad" type="number" min="1" max="99" required><p class="hint">Debes tener 14 años o más.</p></div>
+          <div><label for="pais">País y zona horaria</label><input id="pais" required maxlength="60" placeholder="Colombia, GMT-5"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Experiencia</legend>
+        <label for="exp">¿Has sido staff en otros servers?</label>
+        <select id="exp" required>
+          <option value="">Elige una opción</option>
+          <option value="si">Sí, tengo experiencia</option>
+          <option value="no">No, nunca he sido staff</option>
+        </select>
+        <div id="expSi" class="hidden">
+          <label for="expDet">¿En qué servers y qué rol tenías?</label>
+          <textarea id="expDet" maxlength="600"></textarea>
+        </div>
+        <div id="expNo" class="notice info hidden">Sin experiencia previa, tu postulación será para <b>Helper</b>. Podrás subir de rango con el tiempo.</div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Tu forma de ayudar</legend>
+        <label for="why">¿Por qué quieres ser parte del staff?</label>
+        <textarea id="why" required maxlength="800"></textarea>
+        <label for="guide">Un miembro nuevo llega perdido y no entiende el server. ¿Cómo lo ayudarías y guiarías?</label>
+        <textarea id="guide" required maxlength="800"></textarea>
+        <label for="conflict">Dos miembros empiezan a pelear en el chat. ¿Qué haces?</label>
+        <textarea id="conflict" required maxlength="800"></textarea>
+        <label for="time">¿Cuánto tiempo puedes dedicar al server y en qué horarios?</label>
+        <input id="time" required maxlength="150" placeholder="2 horas diarias, de 6 a 8 pm">
+        <label for="sub">¿Eres suscriptor del canal de Lukas? (opcional)</label>
+        <select id="sub"><option value="">Prefiero no decir</option><option>Sí</option><option>No</option></select>
+      </fieldset>
+
+      <label class="check"><input type="checkbox" id="ok" required> Confirmo que cumplo los requisitos y que mis respuestas son verdaderas.</label>
+
+      <div id="msg" role="status"></div>
+      <button class="btn" id="send" type="submit" style="margin-top:16px">Enviar postulación</button>
+    </form>
+  </section>
+
+  <!-- VISTA ADMIN -->
+  <section id="viewAdmin" class="hidden">
+    <div class="hero" style="padding-bottom:0"><h1 style="font-size:2.6rem">Postulaciones recibidas</h1></div>
+    <div class="bar" id="filters">
+      <button class="chip on" data-f="todas">Todas</button>
+      <button class="chip" data-f="pendiente">Pendientes</button>
+      <button class="chip" data-f="aceptada">Aceptadas</button>
+      <button class="chip" data-f="rechazada">Rechazadas</button>
+    </div>
+    <p class="meta" id="count" style="color:var(--muted);margin-bottom:12px"></p>
+    <div id="list"></div>
+  </section>
+</main>
+
+<footer>Sitio de postulaciones · Servidor de Discord de Lukas GamerQ13</footer>
+
+<dialog id="dlg">
+  <h2>Iniciar sesión</h2>
+  <div class="tabs">
+    <button class="tab on" data-t="login" type="button">Entrar</button>
+    <button class="tab" data-t="register" type="button">Crear cuenta</button>
+  </div>
+  <p class="hint" id="authHint">Acceso solo para el dueño del servidor.</p>
+  <label for="aEmail">Correo</label><input id="aEmail" type="email" autocomplete="email">
+  <label for="aPass">Contraseña</label><input id="aPass" type="password" autocomplete="current-password" minlength="6">
+  <div id="aMsg" role="status"></div>
+  <div class="acts">
+    <button class="btn" id="aGo" type="button">Entrar</button>
+    <button class="btn ghost" id="aClose" type="button">Cancelar</button>
+  </div>
+</dialog>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendEmailVerification, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getFirestore, collection, addDoc, query, orderBy, onSnapshot, updateDoc, deleteDoc, doc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+/* ====== CONFIGURA AQUÍ ====== */
+const firebaseConfig = {
+  apiKey: "AIzaSyBPZVytj7YlMuUFk4Veisj6t6u1iUctFfU",
+  authDomain: "lukas-d3932.firebaseapp.com",
+  projectId: "lukas-d3932",
+  storageBucket: "lukas-d3932.firebasestorage.app",
+  messagingSenderId: "830637448774",
+  appId: "1:830637448774:web:711529068e677def7eb447",
+  measurementId: "G-YDMEK5JDS2"
+};
+const ADMIN_EMAIL = "troopermaskyt@gmail.com";
+/* ============================ */
+
+const $ = id => document.getElementById(id);
+const configured = !firebaseConfig.apiKey.startsWith("TU_");
+if (!configured) $("cfgWarn").classList.remove("hidden");
+
+let auth, db, unsub = null, all = [], filter = "todas", mode = "login";
+if (configured) { const app = initializeApp(firebaseConfig); auth = getAuth(app); db = getFirestore(app); }
+
+const isAdmin = u => u && u.email && u.email.toLowerCase() === ADMIN_EMAIL && u.emailVerified;
+const show = (el, html, cls) => { el.className = "notice " + cls; el.textContent = html; };
+const esc = s => String(s ?? "—");
+
+/* ---------- Formulario ---------- */
+$("exp").onchange = e => {
+  $("expSi").classList.toggle("hidden", e.target.value !== "si");
+  $("expNo").classList.toggle("hidden", e.target.value !== "no");
+};
+
+$("form").onsubmit = async e => {
+  e.preventDefault();
+  const msg = $("msg");
+  if (!configured) return show(msg, "Firebase no está configurado todavía.", "err");
+  const edad = parseInt($("edad").value, 10);
+  const req = ["nombre","discord","edad","pais","exp","why","guide","conflict","time"];
+  if (req.some(k => !$(k).value.trim()) || !$("ok").checked) return show(msg, "Completa todos los campos obligatorios y marca la confirmación.", "err");
+  if (!(edad >= 14)) return show(msg, "Debes ser mayor de 13 años para postular.", "err");
+  if ($("exp").value === "si" && !$("expDet").value.trim()) return show(msg, "Cuéntanos en qué servers fuiste staff.", "err");
+  $("send").disabled = true;
+  try {
+    await addDoc(collection(db, "postulaciones"), {
+      nombre: $("nombre").value.trim(), discord: $("discord").value.trim(), edad,
+      pais: $("pais").value.trim(),
+      experiencia: $("exp").value === "si" ? "Sí" : "No",
+      experienciaDetalle: $("expDet").value.trim(),
+      rangoAsignado: $("exp").value === "si" ? "Staff / Moderador" : "Helper",
+      porQue: $("why").value.trim(), guiar: $("guide").value.trim(),
+      conflicto: $("conflict").value.trim(), disponibilidad: $("time").value.trim(),
+      suscriptor: $("sub").value || "No dijo",
+      estado: "pendiente", createdAt: serverTimestamp()
+    });
+    $("form").reset(); $("expSi").classList.add("hidden"); $("expNo").classList.add("hidden");
+    show(msg, "¡Postulación enviada! Te contactarán por Discord si eres elegido.", "ok");
+  } catch (err) {
+    console.error(err);
+    show(msg, "No se pudo enviar. Revisa tu conexión o las reglas de Firestore.", "err");
+  }
+  $("send").disabled = false;
+};
+
+/* ---------- Login ---------- */
+const dlg = $("dlg");
+$("btnLogin").onclick = () => { $("aMsg").className = ""; $("aMsg").textContent = ""; dlg.showModal(); };
+$("aClose").onclick = () => dlg.close();
+document.querySelectorAll(".tab").forEach(t => t.onclick = () => {
+  mode = t.dataset.t;
+  document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x === t));
+  $("aGo").textContent = mode === "login" ? "Entrar" : "Crear cuenta";
+  $("aPass").autocomplete = mode === "login" ? "current-password" : "new-password";
+  $("authHint").textContent = mode === "login" ? "Acceso solo para el dueño del servidor." : "Solo se permite crear cuenta con el correo autorizado.";
+});
+
+$("aGo").onclick = async () => {
+  const m = $("aMsg"), email = $("aEmail").value.trim().toLowerCase(), pass = $("aPass").value;
+  if (!configured) return show(m, "Firebase no está configurado todavía.", "err");
+  if (!email || pass.length < 6) return show(m, "Escribe tu correo y una contraseña de 6 caracteres o más.", "err");
+  $("aGo").disabled = true;
+  try {
+    if (mode === "register") {
+      if (email !== ADMIN_EMAIL) throw { code: "custom/not-allowed" };
+      const cred = await createUserWithEmailAndPassword(auth, email, pass);
+      await sendEmailVerification(cred.user);
+      show(m, "Cuenta creada. Te enviamos un correo: verifícalo y luego inicia sesión.", "ok");
+      await signOut(auth);
+    } else {
+      const cred = await signInWithEmailAndPassword(auth, email, pass);
+      if (cred.user.email.toLowerCase() !== ADMIN_EMAIL) { await signOut(auth); throw { code: "custom/not-allowed" }; }
+      if (!cred.user.emailVerified) {
+        await sendEmailVerification(cred.user).catch(() => {});
+        await signOut(auth);
+        throw { code: "custom/unverified" };
+      }
+      dlg.close();
+    }
+  } catch (err) {
+    const t = {
+      "custom/not-allowed": "Ese correo no tiene permiso para usar este panel.",
+      "custom/unverified": "Verifica tu correo primero. Te reenviamos el mensaje.",
+      "auth/email-already-in-use": "Esa cuenta ya existe. Usa la pestaña Entrar.",
+      "auth/invalid-credential": "Correo o contraseña incorrectos.",
+      "auth/weak-password": "La contraseña es muy débil.",
+      "auth/too-many-requests": "Demasiados intentos. Espera un momento."
+    }[err.code] || "No se pudo completar la acción. Inténtalo de nuevo.";
+    show(m, t, "err");
+  }
+  $("aGo").disabled = false;
+};
+
+$("btnLogout").onclick = () => signOut(auth);
+$("btnPanel").onclick = () => setView(true);
+$("home").onclick = e => { e.preventDefault(); setView(false); };
+
+function setView(admin) {
+  $("viewAdmin").classList.toggle("hidden", !admin);
+  $("viewPublic").classList.toggle("hidden", admin);
+  window.scrollTo(0, 0);
+}
+
+if (configured) onAuthStateChanged(auth, u => {
+  const ok = isAdmin(u);
+  $("btnLogin").classList.toggle("hidden", !!u && ok);
+  $("btnLogout").classList.toggle("hidden", !ok);
+  $("btnPanel").classList.toggle("hidden", !ok);
+  if (unsub) { unsub(); unsub = null; }
+  if (ok) {
+    setView(true);
+    unsub = onSnapshot(query(collection(db, "postulaciones"), orderBy("createdAt", "desc")),
+      s => { all = s.docs.map(d => ({ id: d.id, ...d.data() })); render(); },
+      () => { $("list").innerHTML = '<p class="empty">No se pudieron leer las postulaciones. Revisa las reglas de Firestore.</p>'; });
+  } else { setView(false); all = []; }
+});
+
+/* ---------- Panel ---------- */
+document.querySelectorAll("#filters .chip").forEach(c => c.onclick = () => {
+  filter = c.dataset.f;
+  document.querySelectorAll("#filters .chip").forEach(x => x.classList.toggle("on", x === c));
+  render();
+});
+
+function render() {
+  const rows = all.filter(a => filter === "todas" || a.estado === filter);
+  $("count").textContent = rows.length + (rows.length === 1 ? " postulación" : " postulaciones");
+  const list = $("list"); list.innerHTML = "";
+  if (!rows.length) { list.innerHTML = '<p class="empty">No hay postulaciones en esta categoría.</p>'; return; }
+  rows.forEach(a => {
+    const d = document.createElement("details"); d.className = "card";
+    const fecha = a.createdAt?.toDate ? a.createdAt.toDate().toLocaleString("es") : "";
+    const s = document.createElement("summary");
+    s.innerHTML = '<div><div class="who"></div><div class="meta"></div></div><span class="tag"></span>';
+    s.querySelector(".who").textContent = a.nombre + " · " + a.discord;
+    s.querySelector(".meta").textContent = a.edad + " años · " + a.rangoAsignado + " · " + fecha;
+    const tag = s.querySelector(".tag"); tag.textContent = a.estado; tag.classList.add(a.estado);
+    d.append(s);
+    const b = document.createElement("div"); b.className = "body";
+    const dl = document.createElement("dl");
+    [["País y zona horaria", a.pais], ["Experiencia en otros servers", a.experiencia + (a.experienciaDetalle ? ": " + a.experienciaDetalle : "")],
+     ["Por qué quiere ser staff", a.porQue], ["Cómo guiaría a un miembro nuevo", a.guiar],
+     ["Cómo resolvería una pelea", a.conflicto], ["Disponibilidad", a.disponibilidad], ["Suscriptor", a.suscriptor]]
+      .forEach(([k, v]) => { const dt = document.createElement("dt"), dd = document.createElement("dd"); dt.textContent = k; dd.textContent = esc(v); dl.append(dt, dd); });
+    b.append(dl);
+    const acts = document.createElement("div"); acts.className = "acts";
+    [["Aceptar", "aceptada", ""], ["Rechazar", "rechazada", "danger"], ["Pendiente", "pendiente", "ghost"]].forEach(([t, st, cls]) => {
+      if (a.estado === st) return;
+      const x = document.createElement("button"); x.className = "btn sm " + cls; x.textContent = t;
+      x.onclick = () => updateDoc(doc(db, "postulaciones", a.id), { estado: st });
+      acts.append(x);
+    });
+    const del = document.createElement("button"); del.className = "btn danger sm"; del.textContent = "Eliminar";
+    del.onclick = () => { if (confirm("¿Eliminar esta postulación? No se puede deshacer.")) deleteDoc(doc(db, "postulaciones", a.id)); };
+    acts.append(del); b.append(acts); d.append(b); list.append(d);
+  });
+}
+</script>
+</body>
+</html>
